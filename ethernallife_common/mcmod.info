@@ -1,0 +1,17 @@
+[
+{
+  "modid": "mod_EthernalLifeOne",
+  "name": "Ethernal Life One",
+  "description": "Longing for Ethernal Bliss, chose your method of reaching that goal",
+  "version": "0.0.1",
+  "credits": "Created by Johndigger",
+  "logoFile": "",
+  "mcversion": "1.6.4",
+  "url": "",
+  "updateUrl": "",
+  "authors": [ "Johndigger"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]
