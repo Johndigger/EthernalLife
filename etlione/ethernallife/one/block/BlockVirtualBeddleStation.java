@@ -1,24 +1,41 @@
-package ethernallife.block;
+package ethernallife.one.block;
 
 import java.util.Random;
 
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import ethernallife.EthernalLife;
+import ethernallife.one.EthernalLife;
+import ethernallife.one.lib.Reference;
 
 public class BlockVirtualBeddleStation extends BlockBed {
 
     public BlockVirtualBeddleStation(Material material) {
         super(176);
-        setTextureName("etlione:virtualbeddlestation");
+        setTextureName(Reference.MOD_ID.toLowerCase()+":virtualbeddlestation");
     }
     
     
     
     @Override
+	public boolean onBlockActivated(World par1World, int par2, int par3,
+			int par4, EntityPlayer player, int par6, float par7,
+			float par8, float par9) {
+    	 if (par1World.isRemote) {
+             return true;}else{
+                 player.addChatMessage("Virtual Beddle Station not ready.");
+
+             }
+
+    return true;
+	}
+
+
+
+	@Override
     public boolean isBed(World world, int x, int y, int z,
             EntityLivingBase player) {
         // TODO Auto-generated method stub
@@ -45,5 +62,4 @@ public class BlockVirtualBeddleStation extends BlockBed {
         return EthernalLife.itemVirtualBeddleStation.itemID;
 
     }
-
 }

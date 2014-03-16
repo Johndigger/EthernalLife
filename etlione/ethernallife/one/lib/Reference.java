@@ -1,4 +1,4 @@
-package ethernallife.lib;
+package ethernallife.one.lib;
 
 public class Reference {
     public static final String MOD_ID="EtLiOne";

@@ -1,18 +1,19 @@
-package ethernallife.item;
+package ethernallife.one.item;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBed;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import ethernallife.EthernalLife;
-import ethernallife.block.BlockVirtualBeddleStation;
+import ethernallife.one.EthernalLife;
+import ethernallife.one.block.BlockVirtualBeddleStation;
+import ethernallife.one.lib.Reference;
 
 public class ItemVirtualBeddleStation extends ItemBed {
 
     public ItemVirtualBeddleStation(int par1) {
         super(par1);
-        setTextureName("etlione:virtualbeddlestation");
+        setTextureName(Reference.MOD_ID.toLowerCase()+":virtualbeddlestation");
 
     }
 

@@ -1,4 +1,4 @@
-package ethernallife;
+package ethernallife.one;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -13,10 +13,10 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
-import ethernallife.block.BlockVirtualBeddleStation;
-import ethernallife.item.ItemPileOfCables;
-import ethernallife.item.ItemVirtualBeddleStation;
-import ethernallife.lib.Reference;
+import ethernallife.one.block.BlockVirtualBeddleStation;
+import ethernallife.one.item.ItemPileOfCables;
+import ethernallife.one.item.ItemVirtualBeddleStation;
+import ethernallife.one.lib.Reference;
 
 @Mod( modid=Reference.MOD_ID, name=Reference.MOD_NAME,version=Reference.VERSION)
 public class EthernalLife {
